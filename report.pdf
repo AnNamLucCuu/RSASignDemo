@@ -1,0 +1,362 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 9 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 4126 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 28 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 742 Tm (RSA Studio) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 689 Tm (Technical implementation report) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 662 Tm (Static browser-local RSA document signing and verification) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 635 Tm (Date: 2 October 2026 / Version: 1.0.0) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 601 Tm (1. Objective and delivered application) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 566 Tm (RSA Studio gives users a way to sign documents and inspect received signatures without uploading) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 551 Tm (documents or private keys. Node.js and npm provide the build toolchain; the deployed application is a set of) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 536 Tm (static HTML, JavaScript and CSS files. React and TypeScript implement the interface, Vite bundles the) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 521 Tm (assets, Web Crypto performs RSA operations, and PKI.js/ASN1.js handle cryptographic containers.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 494 Tm (The application provides detached signatures for arbitrary files, embedded CMS signatures for supported) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 479 Tm (PDFs, RSA key generation/import/export, and self-signed or imported X.509 certificates. The interface) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 464 Tm (supports Vietnamese and English plus light, dark and system themes. English documentation, this PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 449 Tm (report and an AI usage disclosure accompany the source.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 422 Tm (The scope is a practical parameter-controlled browser application. It is not a FIPS-validated module,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 407 Tm (identity provider, qualified electronic-signature service or independently audited security product.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 374 Tm (Delivered artifacts) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 349 Tm (- Production build: dist/; no Node.js process is needed on the production host.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 330 Tm (- Application source, automated tests and manual GitHub Pages deployment workflow.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 311 Tm (- README.md, report.pdf, AI_USAGE.md and reproducible report source/scripts.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 279 Tm (Interface structure) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 254 Tm (The design uses neutral surfaces, a single blue accent and semantic result colors. A sidebar separates) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 239 Tm (Sign, Verify and Keys. Each operation places document input beside key/profile information, followed by an) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 224 Tm (inspectable verification record. Body/display system fonts and monospace key data avoid third-party font) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 209 Tm (downloads.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 182 Tm (The following is a schematic, not a captured screenshot. Real screenshots were not available because the) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 167 Tm (sandbox denied browser launch.) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 134 Tm (Workspace Document + signature mode Key / profile) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 122 Tm (Sign File selection Public fingerprint) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 110 Tm (Verify Sign / verify action Certificate state) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 98 Tm (Keys ----------------------------------------------) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 86 Tm (Verification record) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (1) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 523 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 742 Tm (Theme / VI-EN Document -> Signature -> Public key) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 730 Tm (Identity / coverage / certificate details) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (2) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 4478 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 735 Tm (2. Architecture and data flow) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 700 Tm (The main thread owns interface state and selected files. A dedicated module worker owns the active) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 685 Tm (cryptographic keys and certificate. A request/response service correlates worker messages. Heavy key) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 670 Tm (generation, PEM encryption, CMS and PDF operations execute outside the UI thread; the PDF module loads) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 655 Tm (only when needed.) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 622 Tm (Local file + UI selection) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 610 Tm (|) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 598 Tm (v) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 586 Tm (Worker request: generate / import / export / sign / verify) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 574 Tm (|) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 562 Tm (+--> Web Crypto: RSA-PSS, SHA-256, PBKDF2, AES) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 550 Tm (+--> PKI.js / ASN1.js: PKCS#8, X.509, CMS) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 538 Tm (+--> Bounded PDF structural adapter) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 526 Tm (|) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 514 Tm (v) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 502 Tm (Result + public metadata + local download URL) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 477 Tm (No backend endpoint, remote key store, account or cloud document service is involved. The worker receives) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 462 Tm (local file bytes through structured cloning and returns result metadata or downloadable output. Private) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 447 Tm (keys are exportable because the user explicitly requested local export. The active private CryptoKey) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 432 Tm (remains in worker memory; exported PEM necessarily reaches the main thread temporarily for download.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 399 Tm (Session handling) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 374 Tm (Clearing the session terminates the worker and removes selected files, key state, PEM/password inputs) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 359 Tm (and generated download URLs. Reloading creates a fresh session. localStorage contains only rsa-theme) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 344 Tm (and rsa-language. Exported files remain on the user's disk until the user removes them. JavaScript) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 329 Tm (garbage collection does not provide guaranteed forensic memory zeroization.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 296 Tm (Input and resource boundaries) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 271 Tm (The app processes one document at a time with a 50 MiB limit. PEM file input is bounded at 1 MiB and) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 256 Tm (detached JSON at 16 KiB. Encrypted PEM import caps PBKDF2 work at two million iterations. The PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 241 Tm (adapter limits recursion, cross-reference history, object counts and decompressed stream size.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 226 Tm (Unsupported structures return errors rather than a successful verification result.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 193 Tm (Static deployment) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 168 Tm (Relative asset URLs and hash navigation support root and subdirectory hosting. nginx serves dist/ under) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 153 Tm (HTTPS. GitHub Pages uses a manual workflow with build and tests before artifact upload. HTTPS or) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 138 Tm (localhost is required for the browser environment; direct file:// use is unsupported. Neither a live) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 123 Tm (deployment nor a remote repository was created during implementation.) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (3) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 3816 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 735 Tm (3. Cryptographic profile and FIPS boundary) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 700 Tm (FIPS 186-5 approves RSA signature schemes subject to requirements beyond algorithm selection, including) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 685 Tm (key generation and randomness. Its RSA modulus minimum is 2048 bits, and RSA-PSS salt length is bounded) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 670 Tm (by the hash output length. The standard and NIST's potential-errata notice are authoritative references) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 655 Tm ([1].) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 628 Tm (RSA Studio generates 2048, 3072 or 4096-bit keys, with 3072 as the default and public exponent 65537.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 613 Tm (Imported keys use the same size allowlist and must have an odd exponent greater than 65536 and less than) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 598 Tm (2^256. Multiprime private keys are rejected. The app checks parameters it can inspect but does not) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 583 Tm (attest browser prime-generation procedures or the underlying random-bit generator.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 556 Tm (All new signatures use RSA-PSS, SHA-256, MGF1-SHA-256 and 32-byte salt. Web Crypto performs the) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 541 Tm (padding, hashing and RSA primitive [2,3]. Exact original file bytes are supplied to the signing operation;) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 526 Tm (text normalization and double hashing are avoided. The same key pair is intended for document signing, not) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 511 Tm (encryption.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 478 Tm (Keys and fingerprints) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 453 Tm (Public export uses SPKI PUBLIC KEY PEM. Private input/output uses PKCS#8 PRIVATE KEY or) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 438 Tm (ENCRYPTED PRIVATE KEY PEM. Encrypted export uses PBES2/PBKDF2-HMAC-SHA-256, 600,000) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 423 Tm (iterations and AES-256-CBC, with independently generated salt and IV. The UI requires a password of at) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 408 Tm (least 12 characters and matching confirmation. Plaintext export is available with a visible warning.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 381 Tm (The fingerprint is SHA-256 of the DER SPKI public key. It identifies key bytes, not a person. Users must) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 366 Tm (establish the relationship between that fingerprint and the claimed signer through an independent trusted) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 351 Tm (channel.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 318 Tm (Claims deliberately excluded) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 293 Tm (The application does not claim full FIPS 186-5 compliance, FIPS 140 validation, certified browser) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 278 Tm (randomness, signer identity assurance, legal non-repudiation, or protection against compromised) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 263 Tm (device/application code. Cryptographic signature correctness is reported separately from certificate) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 248 Tm (trust, certificate dates and PDF revision coverage.) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (4) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 4594 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 735 Tm (4. Signature formats and PDF behavior) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 694 Tm (Detached document signatures) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 669 Tm (The downloaded filename ends in .signature.json. The version-1 envelope includes algorithm, hash, mask) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 654 Tm (function, salt length, Base64 signature and public-key fingerprint. It excludes document content and) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 639 Tm (private keys. Verification requires the exact original file and an independently supplied public key or X.509) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 624 Tm (certificate.) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 591 Tm (version: 1) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 579 Tm (algorithm: RSA-PSS) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 567 Tm (hash: SHA-256) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 555 Tm (mgf: MGF1-SHA-256) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 543 Tm (saltLength: 32) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 531 Tm (fingerprint: SHA-256\(SPKI\), lowercase hexadecimal) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 519 Tm (signature: Base64 RSA signature) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 494 Tm (The cryptographic signature covers document bytes only. Envelope fingerprint metadata is not signed; a) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 479 Tm (metadata mismatch is a separate warning. Unsupported versions/parameters and malformed encodings are) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 464 Tm (rejected. A wrong key or changed document produces a signature mismatch.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 431 Tm (Embedded PDF signatures) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 406 Tm (PDF signing appends a signature dictionary, field, updated AcroForm and catalog, plus an incremental) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 391 Tm (cross-reference table. The SubFilter is adbe.pkcs7.detached. CMS SignedData contains the X.509) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 376 Tm (certificate, content-type and message-digest attributes, and RSA-PSS signature. PKI.js constructs and) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 361 Tm (signs CMS [4,5]. Original page bytes are preserved.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 334 Tm (ByteRange covers the output except the hexadecimal Contents signature container. Before returning a) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 319 Tm (signed PDF, the application verifies its generated output. Verification follows the PDF object structure,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 304 Tm (checks exact container exclusion and range boundaries, then verifies CMS over the covered bytes. It does) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 289 Tm (not locate signatures through simple text matching.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 262 Tm (The bounded adapter supports classic cross-reference tables, Flate cross-reference streams with) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 247 Tm (supported PNG predictors, and compressed object streams. It rejects hybrid references, XFA,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 232 Tm (unsupported filters and malformed structures. This version signs unsigned, unencrypted PDFs only. PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 217 Tm (verification supports SHA-256 RSA-PSS with matching MGF1 and salt lengths 0-32, plus SHA-256 PKCS#1) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 202 Tm (v1.5 for existing signatures.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 175 Tm (A valid signature covering an earlier revision is displayed with an explicit change-after-signing warning. It) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 160 Tm (does not authenticate appended bytes. This adapter does not perform complete DocMDP, rendering or PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 145 Tm (shadow-attack analysis.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 112 Tm (Certificates and trust) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 87 Tm (Users import a matching single X.509 PEM certificate or create a one-year, non-CA self-signed) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (5) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 1159 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 742 Tm (certificate with digitalSignature key usage. A certificate mismatch, invalid signing dates or restrictive) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 727 Tm (key usage prevents signing. Embedded certificate subject and validity dates are shown during verification;) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 712 Tm (identity trust remains unverified.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 685 Tm (No trust-store/chain validation, OCSP/CRL, TSA or trusted timestamp is implemented. No PAdES) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 670 Tm (compliance or long-term validation claim is made. Adobe Reader may label a self-signed signer untrusted;) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 655 Tm (Adobe compatibility itself remains pending manual verification.) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (6) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 4423 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 735 Tm (5. Validation evidence) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 700 Tm (Validation used Node.js 24.18.0, OpenSSL 3.6.2, Vite 8.0.16 and Vitest 4.1.8 on macOS. Dependency) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 685 Tm (installation succeeded offline through available npm cache and a clean npm ci. Tests generate disposable) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 670 Tm (keys locally; no production document or key was used.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 637 Tm (Executed checks) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 612 Tm (- TypeScript checking and static production build.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 593 Tm (- Core/PDF automated tests: signing/verification, all supported key sizes, weak-key rejection, PEM round) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 578 Tm (trips, wrong passwords, certificate/key mismatch, PDF tampering and malformed ranges.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 559 Tm (- PDF structural tests: compressed xref/object streams with PNG predictors, appended revisions,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 544 Tm (encryption/hybrid rejection and object generation-number checks.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 525 Tm (- Independent OpenSSL tests: verify Web Crypto PSS, verify OpenSSL PSS in Web Crypto, encrypted) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 510 Tm (PKCS#8 both directions, self-signed certificate verification and extracted PDF CMS verification.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 491 Tm (- React UI integration tests: themes/languages, detached and PDF round trips, tampering, clearing) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 476 Tm (sensitive state and oversized upload handling. These tests use jsdom with the actual production worker) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 461 Tm (bundle over a Node worker transport.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 435 Tm (The current suite contains 28 passing tests across four test files. The core and DOM integration checks) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 420 Tm (establish behavior in this environment; jsdom is not a real browser renderer.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 387 Tm (Checks blocked by the environment) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 362 Tm (Starting a localhost server failed with listen EPERM. Chromium startup separately failed because the) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 347 Tm (managed sandbox denied macOS Mach-port registration. The Playwright suite recorded a blocked listener) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 332 Tm (result instead of reporting success. No completed Chromium/Firefox/WebKit browser run, actual UI) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 317 Tm (screenshot, responsive visual inspection, or Adobe Acrobat Reader check is claimed.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 290 Tm (The provided Playwright suite covers generated/imported keys, downloads, detached/PDF signing and) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 275 Tm (verification, tampering, theme changes, mobile overflow, temporary sessions, request inspection and) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 260 Tm (subpath hosting. GitHub validation automation runs it in a normal CI environment after installing browser) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 245 Tm (dependencies. Real browser and reader validation remains required before a high-assurance rollout.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 212 Tm (Report artifact validation) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 187 Tm (The report is generated from this English Markdown source using a dependency-free paginated PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 172 Tm (writer. npm run report regenerates it. An optional --browser path uses Chromium printing and includes) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 157 Tm (real screenshots when available. The report contains no fabricated test result or screenshot.) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (7) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 21 0 R >>
+endobj
+21 0 obj
+<< /Length 4251 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+BT /F2 16 Tf 0.15 0.39 0.92 rg 1 0 0 1 48 735 Tm (6. Implementation decisions and maintenance) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 700 Tm (The original PDF-library choice, @libpdf/core, was unavailable in the offline package cache. The delivered) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 685 Tm (bounded structural adapter replaces that dependency while keeping RSA primitives in Web Crypto. Its) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 670 Tm (supported subset is documented in the UI and README. This tradeoff makes parser review and regression) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 655 Tm (coverage a maintenance responsibility; it should not be mistaken for a mature, comprehensive PDF) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 640 Tm (validator.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 613 Tm (The originally suggested bundled Manrope/Noto fonts were also unavailable. Operating-system) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 598 Tm (display/body fonts and monospace utility text preserve a restrained design without runtime external) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 583 Tm (requests. Browser restrictions necessitated the native report renderer instead of successful Playwright) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 568 Tm (printing. Browser automation and the optional print path remain in the repository.) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 541 Tm (Recommended release checks are to run the prepared suite on the intended hosting origin and target) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 526 Tm (browsers, inspect mobile/light/dark screenshots, open generated PDFs in the target reader, and review) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 511 Tm (the PDF adapter and deployment code before handling sensitive documents. Certificate trust integrations,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 496 Tm (hardware tokens, encrypted PDF signing, additional signatures and timestamps require separate future) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 481 Tm (work.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 448 Tm (Reproduction commands) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 417 Tm (npm ci) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 405 Tm (npm run typecheck) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 393 Tm (npm test) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 381 Tm (npm run build) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 369 Tm (npx playwright install --with-deps chromium firefox webkit) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 357 Tm (npm run test:e2e) Tj ET
+BT /F3 8 Tf 0.15 0.28 0.42 rg 1 0 0 1 48 345 Tm (npm run report) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 320 Tm (AI-assisted work and verification boundaries are disclosed in AI_USAGE.md. No independent human audit,) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 305 Tm (FIPS certification or live deployment is claimed.) Tj ET
+BT /F2 12 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 272 Tm (References) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 247 Tm ([1] NIST FIPS 186-5, Digital Signature Standard: https://csrc.nist.gov/pubs/fips/186-5/final) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 220 Tm ([2] W3C Web Cryptography API: https://www.w3.org/TR/webcrypto/) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 193 Tm ([3] RFC 8017, PKCS #1 v2.2: https://www.rfc-editor.org/rfc/rfc8017) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 166 Tm ([4] RFC 5652, Cryptographic Message Syntax: https://www.rfc-editor.org/rfc/rfc5652) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 139 Tm ([5] PKI.js SignedData API: https://pkijs.org/docs/api/classes/SignedData/) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 112 Tm ([6] Vite static deployment: https://vite.dev/guide/static-deploy.html) Tj ET
+BT /F1 10 Tf 0.1 0.15 0.2 rg 1 0 0 1 48 85 Tm ([7] Playwright PDF printing: https://playwright.dev/docs/api/class-page#page-pdf) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (8) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 23 0 R >>
+endobj
+23 0 obj
+<< /Length 319 >>
+stream
+0.15 0.39 0.92 rg 48 790 499 3 re f
+BT /F2 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 773 Tm (RSA STUDIO  /  TECHNICAL REPORT) Tj ET
+0.88 0.91 0.94 RG 48 42 m 547 42 l S
+BT /F1 8 Tf 0.35 0.42 0.49 rg 1 0 0 1 48 28 Tm (RSA Studio / Browser-local document signatures) Tj ET
+BT /F1 8 Tf 0.1 0.15 0.2 rg 1 0 0 1 535 28 Tm (9) Tj ET
+endstream
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000170 00000 n 
+0000000240 00000 n 
+0000000315 00000 n 
+0000000383 00000 n 
+0000000529 00000 n 
+0000004706 00000 n 
+0000004852 00000 n 
+0000005425 00000 n 
+0000005573 00000 n 
+0000010103 00000 n 
+0000010251 00000 n 
+0000014119 00000 n 
+0000014267 00000 n 
+0000018913 00000 n 
+0000019061 00000 n 
+0000020272 00000 n 
+0000020420 00000 n 
+0000024895 00000 n 
+0000025043 00000 n 
+0000029346 00000 n 
+0000029494 00000 n 
+trailer
+<< /Size 24 /Root 1 0 R >>
+startxref
+29864
+%%EOF
