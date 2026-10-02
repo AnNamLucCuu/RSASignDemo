@@ -25,6 +25,8 @@ Executed checks include TypeScript checking, static production build, clean `npm
 
 Real Chromium startup and a localhost listener were attempted and denied by the managed sandbox. The Playwright suite was then attempted and recorded a blocked listener result. No successful real-browser run, screenshot, Adobe Acrobat check, remote deployment, external security audit or FIPS validation is claimed.
 
+The generated report was independently opened using macOS PDFKit, which read nine pages and extracted the report text. This is a PDF artifact check, not an application browser test.
+
 ## Implementation deviations
 
 The environment could not reach npm registry DNS/network. Cached dependencies were used to install and produce a lockfile; normal installation uses `npm ci`. `@libpdf/core` was unavailable in cache, so a narrower repository-owned PDF adapter was implemented, with explicit unsupported cases and structural tests. This increases PDF parser maintenance responsibilities compared with using a general-purpose PDF library.

@@ -148,6 +148,8 @@ The provided Playwright suite covers generated/imported keys, downloads, detache
 
 The report is generated from this English Markdown source using a dependency-free paginated PDF writer. npm run report regenerates it. An optional --browser path uses Chromium printing and includes real screenshots when available. The report contains no fabricated test result or screenshot.
 
+An independent macOS PDFKit check successfully opened the generated report, found nine pages and extracted its text. This confirms basic PDF readability without relying on the application's own PDF adapter.
+
 ---
 ## 6. Implementation decisions and maintenance
 
